@@ -45,8 +45,26 @@ $(".header .header__nav-primary").on('click', function () {
     }
 });
 
+$(".apple-store").on('click', function () {
+
+    var selector = $(".signup1")
+    var selector2 = $(".signup2")
+    selector2.removeClass('sign');
+     selector.addClass('sign');
 
 
+   
+});
+$(".google-play").on('click', function () {
+
+    var selector = $(".signup1")
+    var selector2 = $(".signup2")
+    selector.removeClass('sign');
+     selector2.addClass('sign');
+
+
+ 
+});
 
 $(".header .header__nav span").on('click', function () {
 
