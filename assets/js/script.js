@@ -31,6 +31,23 @@ $(".header .header__bars").on('click', function () {
     }
 });
 
+
+$(".header .header__nav-primary").on('click', function () {
+
+    var selector = $(".header .header__nav")
+
+    if (selector.hasClass('shown')) {
+        selector.css('right', "100%");
+        selector.removeClass('shown');
+    } else {
+        selector.css('right', "0");
+        selector.addClass('shown');
+    }
+});
+
+
+
+
 $(".header .header__nav span").on('click', function () {
 
     var selector = $(".header .header__nav")
